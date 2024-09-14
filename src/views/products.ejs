@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Productos</h1>
+    </header>
+
+    <div class="container">
+        <a href="/" class="btn">Volver</a>
+        <a href="/products/create" class="btn">Agregar Nuevo Producto</a>
+
+        <% if (sales.length > 0) { %>
+            <ul>
+                <% sales.forEach(sale => { %>
+                    <li>
+                        <strong>Código:</strong> <%= sale.codigo %><br>
+                        <strong>Producto:</strong> <%= sale.product_name %><br>
+                        <strong>Precio:</strong> <%= sale.price %><br>
+                        <strong>Efectivo:</strong> <%= sale.cash %><br>
+                        <strong>Débito:</strong> <%= sale.debit %><br>
+                        <form action="/products/<%= sale.id_sales %>/delete" method="post" style="display: inline;">
+                            <button type="submit" class="btn">Eliminar</button>
+                        </form>
+                        <a href="/products/<%= sale.id_sales %>/edit" class="btn">Editar</a>
+                    </li>
+                <% }) %>
+            </ul>
+        <% } else { %>
+            <p>No se encontraron productos.</p>
+        <% } %>
+    </div>
+</body>
+</html>

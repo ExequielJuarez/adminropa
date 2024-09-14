@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Producto</title>
+    <link rel="stylesheet" href="css/editProduct.css">
+</head>
+<body>
+    <header>
+        <h1>Editar Producto</h1>
+    </header>
+
+    <div class="container">
+        <form id="editForm" action="/products/<%= sale.id_sales %>/update" method="post">
+            <div class="form-group">
+                <label for="codigo">Código:</label>
+                <input type="text" id="codigo" name="codigo" value="<%= sale.codigo %>" required>
+            </div>
+            <div class="form-group">
+                <label for="producto">Producto:</label>
+                <input type="text" id="producto" name="producto" value="<%= sale.product_name %>" required>
+            </div>
+            <div class="form-group">
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" name="precio" step="0.01" value="<%= sale.price %>" required>
+            </div>
+            <div class="form-group">
+                <label for="efectivo">Efectivo:</label>
+                <input type="number" id="efectivo" name="efectivo" step="0.01" value="<%= sale.cash %>" required>
+            </div>
+            <div class="form-group">
+                <label for="debito">Débito:</label>
+                <input type="number" id="debito" name="debito" step="0.01" value="<%= sale.debit %>" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Guardar Cambios</button>
+            </div>
+        </form>
+        <a href="/products" class="btn">Volver</a>
+    </div>
+</body>
+</html>
