@@ -74,7 +74,13 @@ const productController = {
 
     // Esta función crea una nueva venta
     createSale: async (req, res) => {
-        const saleData = req.body;
+        const saleData = {
+            codigo: req.body.codigo,
+            product_name: req.body.producto,
+            price: req.body.precio,
+            cash: req.body.efectivo,
+            debit: req.body.debito
+        };
         try {
             await saleService.createSale(saleData);
             res.redirect('/');
