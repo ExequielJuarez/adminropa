@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Carga</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <div class="search-container">
+            <form id="searchForm" action="/search" method="get">
+                <input type="text" id="search" name="search" placeholder="Buscar por código...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Formulario de Carga</h2>
+        <form id="formulario" action="/add" method="post">
+            <div class="form-group">
+                <label for="codigo">Código:</label>
+                <input type="text" id="codigo" name="codigo" required>
+            </div>
+            <div class="form-group">
+                <label for="producto">Producto:</label>
+                <input type="text" id="producto" name="producto" required>
+            </div>
+            <div class="form-group">
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" name="precio" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="efectivo">Efectivo:</label>
+                <input type="number" id="efectivo" name="efectivo" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="debito">Débito:</label>
+                <input type="number" id="debito" name="debito" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+
+        <!-- Resultados de la búsqueda -->
+        <div id="resultados">
+            <!-- Los resultados se mostrarán aquí -->
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

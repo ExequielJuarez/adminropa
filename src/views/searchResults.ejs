@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de Búsqueda</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <h1>Resultados de Búsqueda</h1>
+    </header>
+
+    <div class="container">
+        <% if (sales.length > 0) { %>
+            <div class="sales-container">
+                <% sales.forEach(sale => { %>
+                    <div class="sale-card">
+                        <h2><%= sale.codigo %></h2>
+                        <p><strong>Nombre del Producto:</strong> <%= sale.product_name %></p>
+                        <p><strong>Precio:</strong> <%= sale.price %></p>
+                        <p><strong>Efectivo:</strong> <%= sale.cash %></p>
+                        <p><strong>Débito:</strong> <%= sale.debit %></p>
+                    </div>
+                <% }) %>
+            </div>
+        <% } else { %>
+            <p>No se encontraron ventas para el código proporcionado.</p>
+        <% } %>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

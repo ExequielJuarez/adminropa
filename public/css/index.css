@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #45a049;
+}
+
+#mensaje {
+    margin-top: 15px;
+    text-align: center;
+    color: green;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    padding: 10px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.search-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-container button:hover {
+    background-color: #45a049;
+}
+
+header {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Reset de márgenes y rellenos para un diseño más predecible */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Asegura que el contenedor principal ocupe todo el ancho de la pantalla */
+.container {
+    padding: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilo del contenedor de ventas */
+.sales-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre cada tarjeta de venta */
+}
+
+/* Estilo de cada tarjeta de venta */
+.sale-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los encabezados de las tarjetas */
+.sale-card h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Estilo para los párrafos dentro de las tarjetas */
+.sale-card p {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* Estilo para los encabezados de sección */
+
