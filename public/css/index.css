@@ -33,7 +33,7 @@ h2 {
 }
 
 .form-group input {
-    width: 100%;
+    width: 90%;
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -70,7 +70,7 @@ h2 {
 }
 
 .search-container input[type="text"] {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -82,7 +82,6 @@ h2 {
     color: white;
     border: none;
     padding: 10px 15px;
-    margin-left: 10px;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
@@ -101,6 +100,8 @@ header {
     align-items: center;
     height: 100vh;
     background-color: #f4f4f4;
+    margin-top: 80px;
+    margin-bottom: 30px;
 }
 
 /* Reset de márgenes y rellenos para un diseño más predecible */
@@ -146,3 +147,12 @@ body, h1, p {
 
 /* Estilo para los encabezados de sección */
 
+.mostrar{
+    padding: 15px;
+    border: 1px solid ;
+    background-color: #45a049;
+    color: #f4f4f4;
+    margin-top: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+}

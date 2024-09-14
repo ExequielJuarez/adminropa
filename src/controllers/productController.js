@@ -50,7 +50,15 @@ const productController = {
     // Esta función actualiza los datos del producto
     updateProduct: async (req, res) => {
         const id = req.params.id;
-        const saleData = req.body;
+        const { codigo, product_name, precio, efectivo, debito } = req.body;
+        const saleData = {
+            codigo: codigo,
+            product_name: product_name,
+            price: parseFloat(precio),
+            cash: parseFloat(efectivo),
+            debit: parseFloat(debito)
+        };
+    
         try {
             await saleService.updateSale(id, saleData);
             res.redirect('/products');
@@ -59,6 +67,7 @@ const productController = {
             res.status(500).send('Error updating sale');
         }
     },
+    
 
     // Esta función elimina un producto
     deleteProduct: async (req, res) => {
