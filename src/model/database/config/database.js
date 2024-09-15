@@ -16,9 +16,9 @@ const base  ={
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
+    "username": "ufqfhzsudzkxsjq3",
+    "password": "7I3G2RcqAlsQFfMRshrp",
+    "database": "bhrqzuxz4ngcvc9dyxnq",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }
