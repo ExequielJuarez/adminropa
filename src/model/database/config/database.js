@@ -19,7 +19,7 @@ const base  ={
     "username": "ufqfhzsudzkxsjq3",
     "password": "7I3G2RcqAlsQFfMRshrp",
     "database": "bhrqzuxz4ngcvc9dyxnq",
-    "host": "127.0.0.1",
+    "host": "bhrqzuxz4ngcvc9dyxnq-mysql.services.clever-cloud.com",
     "dialect": "mysql"
   }
 }
